@@ -33,11 +33,11 @@
                     <img src="/back/vendors/images/deskapp-logo.svg" alt="" />
                 </a>
             </div>
-            <div class="login-menu">
+            {{-- <div class="login-menu">
                 <ul>
                     <li><a href="register.html">Register</a></li>
                 </ul>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="login-wrap d-flex align-items-center flex-wrap justify-content-center">
@@ -46,7 +46,9 @@
                 <div class="col-md-6 col-lg-7">
                     <img src="/back/vendors/images/login-page-img.png" alt="" />
                 </div>
-                <div class="col-md-6 col-lg-5">
+
+                @yield('content')
+                {{-- <div class="col-md-6 col-lg-5">
                     <div class="login-box bg-white box-shadow border-radius-10">
                         <div class="login-title">
                             <h2 class="text-center text-primary">Login To DeskApp</h2>
@@ -102,9 +104,9 @@
                                 <div class="col-sm-12">
                                     <div class="input-group mb-0">
                                         <!--
-           use code for form submit
-           <input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
-          -->
+                                        use code for form submit
+                                        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
+                                        -->
                                         <a class="btn btn-primary btn-lg btn-block" href="index.html">Sign In</a>
                                     </div>
                                     <div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">
@@ -118,7 +120,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
