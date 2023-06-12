@@ -7,7 +7,8 @@
             <div class="login-title">
                 <h2 class="text-center text-primary">Admin Login</h2>
             </div>
-            <form>
+            <form action="{{ url('admin/login_handler') }}" method="POST">
+                @csrf
                 @if (Session::get('fail'))
                     <div class="alert alert-danger">
                         {{ Session::get('fail') }}
